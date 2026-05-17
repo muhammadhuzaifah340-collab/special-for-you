@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You, My Love 💕</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- floating hearts -->
+<div class="fh-wrap" id="fhWrap"></div>
+
+<!-- particle canvas -->
+<canvas id="cv"></canvas>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="hero">
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
+  <div class="hero-inner">
+    <div class="pill">✦ &nbsp; A Special Surprise For Someone Special &nbsp; ✦</div>
+    <p class="hero-name">To My Dearest</p>
+    <h1 class="hero-title">You Mean<br>Everything</h1>
+    <p class="hero-sub">There's something I've been wanting to say — and I made this just to say it to you 🌹</p>
+    <a href="#memories" class="btn-glow">Begin This Journey ↓</a>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="sline"></div>
+  </div>
+</section>
+
+<!-- ══════════════ MEMORY CARDS (no photos) ══════════════ -->
+<section id="memories">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="s-eye">✦ &nbsp; moments we live in &nbsp; ✦</p>
+      <h2 class="s-title">A Gallery of<br><em style="color:var(--rose);font-style:italic;">Us</em></h2>
+      <p class="s-sub mt-2">Every memory with you lives rent-free in my heart ✨</p>
+    </div>
+
+    <div class="row g-4 mt-3">
+
+      <!-- Card A -->
+      <div class="col-12 col-md-6 reveal-l d2">
+        <div class="mem-card card-a">
+          <div class="card-a-deco">❝</div>
+          <p class="big-quote">"The moment I met you, I knew — this is the person I want to be annoying with forever."</p>
+          <span class="card-label">✦ The Beginning</span>
+          <p class="card-sub">Some things you just feel before you understand them.</p>
+        </div>
+      </div>
+
+      <!-- Card A2 -->
+      <div class="col-12 col-md-6 reveal-r d2">
+        <div class="mem-card card-a" style="background:linear-gradient(135deg,#1a0a2e 0%,#3a1060 60%,#5a1a70 100%);">
+          <div class="card-a-deco">✦</div>
+          <p class="big-quote">"Your laugh is my favourite song. I'd listen to it on repeat forever."</p>
+          <span class="card-label">✦ My Favourite Sound</span>
+          <p class="card-sub">A sound that makes everything else quiet.</p>
+        </div>
+      </div>
+
+      <!-- Card C — Polaroid style (no img, text placeholder) -->
+      <div class="col-12 col-sm-6 col-lg-4 reveal d2">
+        <div class="mem-card card-c">
+          <div class="photo-placeholder">
+            <span class="ph-icon">🌹</span>
+            <p class="ph-line">"You are the warmth I never knew I was missing until you arrived."</p>
+          </div>
+          <p class="caption">My Warmth 🌸</p>
+          <p class="cdate">Always & forever</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 reveal d3">
+        <div class="mem-card card-c card-c-r">
+          <div class="photo-placeholder" style="background:linear-gradient(135deg,#e8d5f5,#fdeef3);">
+            <span class="ph-icon">💫</span>
+            <p class="ph-line">"With you, ordinary moments feel like the most beautiful scenes in a film."</p>
+          </div>
+          <p class="caption">Our Little World ✨</p>
+          <p class="cdate">Worth every second</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 reveal d4">
+        <div class="mem-card card-c">
+          <div class="photo-placeholder" style="background:linear-gradient(135deg,#fbd4e0,#f0d9b5);">
+            <span class="ph-icon">🕯️</span>
+            <p class="ph-line">"You light up my world in ways I didn't think were possible."</p>
+          </div>
+          <p class="caption">My Light 💛</p>
+          <p class="cdate">Grateful every day</p>
+        </div>
+      </div>
+
+      <!-- Card B — glass quote -->
+      <div class="col-12 col-md-6 reveal-l d2">
+        <div class="mem-card card-b">
+          <div class="num">01</div>
+          <p class="quote-line">"I don't need a map when I'm with you — because wherever you are, that's exactly where I want to be."</p>
+          <span class="q-tag">✦ Lost But Found</span>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 reveal-r d3">
+        <div class="mem-card card-b" style="background:linear-gradient(135deg,#e8f0ff,#fdeef3);">
+          <div class="num">02</div>
+          <p class="quote-line">"You make me want to be better — not for anyone else, but because you deserve the best version of me."</p>
+          <span class="q-tag">✦ Because of You</span>
+        </div>
+      </div>
+
+      <!-- Card D — wide dark horizontal -->
+      <div class="col-12 reveal d2">
+        <div class="card-d">
+          <div class="d-left">
+            <span class="big-emoji">💌</span>
+            <span class="d-label">✦ To My Person</span>
+          </div>
+          <div class="d-right">
+            <p class="d-title">You are my safe place, my adventure, and my home — all at once.</p>
+            <p class="d-text">I never thought one person could be so many things to someone. And then you happened. Happy Birthday, my love — today belongs entirely to you.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ QUOTE SLIDER ══════════════ -->
+<section id="quotes">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:4rem;">
+      <p class="s-eye" style="color:var(--rose-light);">✦ &nbsp; words that feel too small &nbsp; ✦</p>
+      <h2 class="s-title" style="color:#fff;">From My Heart<br><em style="color:var(--rose-light);">To Yours</em></h2>
+    </div>
+
+    <div>
+      <div class="q-slide active">
+        <span class="q-mark">"</span>
+        <p class="q-text">I didn't plan to fall for you — but here I am, grateful every single day that I did. You are something truly rare.</p>
+        <p class="q-author">✦ For You, Always ✦</p>
+      </div>
+      <div class="q-slide">
+        <span class="q-mark">"</span>
+        <p class="q-text">You are the kind of rare that people write songs about, paint portraits of, and spend their whole lives searching for. I found you — and I'm never letting go.</p>
+        <p class="q-author">✦ From the Depths of My Heart ✦</p>
+      </div>
+      <div class="q-slide">
+        <span class="q-mark">"</span>
+        <p class="q-text">Loving you feels like the easiest thing I've ever done, and the most important. I want to keep choosing you — every single day.</p>
+        <p class="q-author">✦ Always Yours ✦</p>
+      </div>
+      <div class="q-slide">
+        <span class="q-mark">"</span>
+        <p class="q-text">You deserve candlelight, a beautiful dinner, and someone who looks at you like you're the only person in the room. Let me be that someone. 🌹</p>
+        <p class="q-author">✦ One Evening, Just Us ✦</p>
+      </div>
+      <div class="q-slide">
+        <span class="q-mark">"</span>
+        <p class="q-text">If I could give you one gift, it would be the ability to see yourself through my eyes — because what I see is absolutely breathtaking.</p>
+        <p class="q-author">✦ With All My Love ✦</p>
+      </div>
+    </div>
+
+    <div class="q-dots">
+      <button class="q-dot active" onclick="goSlide(0)"></button>
+      <button class="q-dot" onclick="goSlide(1)"></button>
+      <button class="q-dot" onclick="goSlide(2)"></button>
+      <button class="q-dot" onclick="goSlide(3)"></button>
+      <button class="q-dot" onclick="goSlide(4)"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ DATE PROPOSAL ══════════════ -->
+<section id="proposal">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="s-eye">✦ &nbsp; the real reason I made this &nbsp; ✦</p>
+      <h2 class="s-title">I Have A<br><em style="color:var(--rose);font-style:italic;">Question For You</em></h2>
+    </div>
+
+    <div class="proposal-card reveal d2">
+      <span class="proposal-icon">🍽️</span>
+      <h3>Will You Go On A Date With Me?</h3>
+      <p>
+        I've been thinking about this for a while — and I finally got the courage to just ask you.
+        I want to take you somewhere special, sit across from you, and just enjoy every moment with you.
+        No distractions. Just us. 🌹
+      </p>
+
+      <div class="date-details">
+        <div class="dd-item">
+          <span class="dd-icon">🌙</span>
+          <div class="dd-label">Vibe</div>
+          <div class="dd-val">A Special Date</div>
+        </div>
+        <div class="dd-item">
+          <span class="dd-icon">🍽️</span>
+          <div class="dd-label">Setting</div>
+          <div class="dd-val">Restaurant</div>
+        </div>
+        <div class="dd-item">
+          <span class="dd-icon">🌹</span>
+          <div class="dd-label">Company</div>
+          <div class="dd-val">Just Us Two</div>
+        </div>
+        <div class="dd-item">
+          <span class="dd-icon">💫</span>
+          <div class="dd-label">Promise</div>
+          <div class="dd-val">Unforgettable</div>
+        </div>
+      </div>
+
+      <p style="font-size:1.05rem;">I already have it all planned — I just need one word from you 💌</p>
+
+      <div id="answer-section">
+        <p>So... what do you say? 🥺</p>
+        <button class="btn-yes" onclick="sayYes()">Yes, I'd love that 💕</button>
+        <button class="btn-no" id="noBtn" onmouseover="runAway(this)" ontouchstart="runAway(this)">Maybe not...</button>
+      </div>
+
+      <div id="response-msg">
+        <p>She said YES! 🎉💕🌹</p>
+        <span style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--text-mid);font-size:1.1rem;">
+          You just made me the happiest person alive. I can't wait for our evening together. ✨
+        </span>
+      </div>
+    </div>
+
+     <!-- Love Letter Trigger -->
+    <div class="text-center mt-4 reveal d4">
+      <p class="s-sub mb-3">One more thing for you... 💌</p>
+      <button class="btn-glow" data-bs-toggle="modal" data-bs-target="#loveModal">
+        I Have Something To Ask You 💌
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ LOVE LETTER MODAL ══════════════ -->
+<div class="modal fade" id="loveModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">💌 &nbsp; Just Wanted To Ask You Something &nbsp; 💌</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="letter-wrap">
+          <p>My love,</p>
+          <p>
+            I built this entire website just for you — every line, every detail, every word
+            was written thinking about you. And I just wanted you to know how much
+            doing all of this for you means to me.
+          </p>
+          <p>
+            But before anything else, I have two things I genuinely need to ask you —
+            and please, do answer. 🥺
+          </p>
+ 
+          <div style="background:linear-gradient(135deg,var(--rose-pale),var(--lavender));border-radius:16px;padding:1.8rem;margin:1.5rem 0;">
+            <p style="font-family:'Playfair Display',serif;font-style:normal;font-size:1.1rem;color:var(--text-dark);font-weight:700;margin-bottom:.5rem;">
+              ✦ First Question:
+            </p>
+            <p style="margin-bottom:0;">
+              How did you find this website? And did you feel the effort I put into it?
+              I genuinely want to know what you think. 💕
+            </p>
+          </div>
+ 
+          <div style="background:linear-gradient(135deg,var(--lavender),#fdeef3);border-radius:16px;padding:1.8rem;margin:1.5rem 0;">
+            <p style="font-family:'Playfair Display',serif;font-style:normal;font-size:1.1rem;color:var(--text-dark);font-weight:700;margin-bottom:.5rem;">
+              ✦ Second Question:
+            </p>
+            <p style="margin-bottom:0;">
+              Will you go on a date with me? 🌹<br>
+              <span style="font-size:.9rem;color:var(--text-soft);">(The "no" button runs away anyway — you've already seen that 😄)</span>
+            </p>
+          </div>
+ 
+          <p>I'll be waiting for your answer. 🥺</p>
+          <div class="letter-sig">Yours, always ♡</div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ FINALE ══════════════ -->
+<section id="finale">
+  <div class="fin-stars" id="finStars"></div>
+  <div class="container">
+    <div class="fin-inner reveal">
+      <span class="fin-icon">💖</span>
+      <h2 class="fin-title">Will You Say Yes,<br>My Beautiful?</h2>
+      <p class="fin-msg">
+        I choose you — today, tomorrow, and every day after.
+        Now please say yes so I can take you out and show you just how much you mean to me. 🌹
+      </p>
+      <div class="fin-sig">Yours completely ♡</div>
+      <div class="fin-hearts">💕 💗 💖 💗 💕</div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
